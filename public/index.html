@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Customers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="container">
+    <div class="header">
+      <h1>Customers</h1>
+      <a class="btn btn-primary" href="add.html">Add Customer</a>
+    </div>
+
+
+ <section class="card">
+      <div class="list">
+        <div class="list-row header" aria-hidden="true">
+          <div class="cell-sn">S/N</div>
+          <div class="cell-name">Full name</div>
+          <div class="cell-actions">Actions</div>
+        </div>
+        <div id="list-body"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Accessible Confirm Dialog -->
+  <div id="confirm-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="confirm-title" aria-describedby="confirm-desc">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-dialog" role="document">
+      <h2 id="confirm-title" class="modal-title">Confirm action</h2>
+      <div id="confirm-desc" class="modal-body">Are you sure?</div>
+      <div class="modal-actions">
+        <button id="confirm-no" class="btn btn-secondary">No</button>
+        <button id="confirm-yes" class="btn btn-danger">Yes, delete</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/ui.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
