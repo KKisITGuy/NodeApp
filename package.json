@@ -16,5 +16,8 @@
     "url": "https://github.com/KKisITGuy/NodeApp/issues"
   },
   "homepage": "https://github.com/KKisITGuy/NodeApp#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
